@@ -154,3 +154,10 @@ LOGGING = {
         },
     }
 }
+
+# Override any of these settings with settings_local
+try:
+    from settings_local import *
+except ImportError:
+    pass
+
